@@ -1,0 +1,7 @@
+div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 50vh;
+}

@@ -1,0 +1,44 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Chicles de menta",
+      "descripcion": "Deliciosos chicles de menta, refrescantes y sabrosos.",
+      "precio": 0.50,
+      "stock": 100,
+      "imagen": "https://ejemplo.com/imagen_chicles_menta.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Chocolate con leche",
+      "descripcion": "Tableta de chocolate con leche suave y cremoso.",
+      "precio": 1.00,
+      "stock": 75,
+      "imagen": "https://ejemplo.com/imagen_chocolate_leche.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Gomitas de ositos",
+      "descripcion": "Gomitas dulces en forma de ositos, variados colores y sabores.",
+      "precio": 0.75,
+      "stock": 120,
+      "imagen": "https://ejemplo.com/imagen_gomitas_ositos.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Caramelos de frutas",
+      "descripcion": "Caramelos duros con sabor a frutas variadas.",
+      "precio": 0.25,
+      "stock": 200,
+      "imagen": "https://ejemplo.com/imagen_caramelos_frutas.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Piruletas de fresa",
+      "descripcion": "Piruletas grandes con sabor a fresa, ideales para chupar.",
+      "precio": 0.80,
+      "stock": 50,
+      "imagen": "https://ejemplo.com/imagen_piruletas_fresa.jpg"
+    }
+  ]
+}

@@ -8,6 +8,7 @@ const App = () => {
     {/** *   <ComponenteRef />
     <ComponentUseEff />
   */}
+    <ComponentUseEff />
     <Counter />
     <Producto />
 

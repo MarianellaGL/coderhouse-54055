@@ -1,0 +1,21 @@
+.container{
+  background-color: rgb(181, 138, 138);
+}
+
+.ul{
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr );
+  grid-template-rows: auto;
+  grid-gap: 50px;
+  list-style: none;
+}
+
+.li{
+  margin: 18px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

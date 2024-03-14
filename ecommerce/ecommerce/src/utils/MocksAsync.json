@@ -1,4 +1,9 @@
 {
+  "categorias": [
+  { "id": 1, "nombre": "Golosinas" },
+  { "id": 2, "nombre": "Chocolate" },
+  { "id": 3, "nombre": "Caramelos" }
+],
   "productos": [
     {
       "id": 1,
@@ -6,7 +11,9 @@
       "descripcion": "Deliciosos chicles de menta, refrescantes y sabrosos.",
       "precio": 0.50,
       "stock": 100,
-      "imagen": "https://ejemplo.com/imagen_chicles_menta.jpg"
+      "imagen": "https://lacolonia.vtexassets.com/arquivos/ids/162128-1200-auto?v=636843688625800000&width=1200&height=auto&aspect=true",
+      "isOnDiscount": false,
+      "categoria": 1
     },
     {
       "id": 2,
@@ -14,7 +21,9 @@
       "descripcion": "Tableta de chocolate con leche suave y cremoso.",
       "precio": 1.00,
       "stock": 75,
-      "imagen": "https://ejemplo.com/imagen_chocolate_leche.jpg"
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Schokolade-braun.jpg/800px-Schokolade-braun.jpg",
+      "isOnDiscount": true,
+      "categoria": 2
     },
     {
       "id": 3,
@@ -22,7 +31,9 @@
       "descripcion": "Gomitas dulces en forma de ositos, variados colores y sabores.",
       "precio": 0.75,
       "stock": 120,
-      "imagen": "https://ejemplo.com/imagen_gomitas_ositos.jpg"
+      "imagen": "https://i.blogs.es/b6b875/9234009120_ba9961e7c5_z/450_1000.jpg",
+      "isOnDiscount": true,
+      "categoria": 1
     },
     {
       "id": 4,
@@ -30,15 +41,20 @@
       "descripcion": "Caramelos duros con sabor a frutas variadas.",
       "precio": 0.25,
       "stock": 200,
-      "imagen": "https://ejemplo.com/imagen_caramelos_frutas.jpg"
+      "imagen": "https://arcorencasa.com/wp-content/uploads/2023/09/20230904-1782.jpg",
+      "isOnDiscount":false,
+      "categoria":3
     },
     {
       "id": 5,
       "nombre": "Piruletas de fresa",
-      "descripcion": "Piruletas grandes con sabor a fresa, ideales para chupar.",
+      "descripcion": "Piruletas grandes con sabor a fresa",
       "precio": 0.80,
       "stock": 50,
-      "imagen": "https://ejemplo.com/imagen_piruletas_fresa.jpg"
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWNkUStwBQn7dRBtuErN62oagybIkEsfyvJdiyh_B9EbFXcRoaH7T6WmDnLH1uLoKVhfo&usqp=CAU",
+      "isOnDiscount": true,
+      "categoria": 1
+
     }
   ]
 }

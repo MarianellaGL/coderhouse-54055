@@ -1,8 +1,8 @@
-export const fakeApiCall = (mock) => {
+export const fakeApiCall = (products) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(mock)
+      resolve(products)
     }
-      , 2000)
+      , 5000)
   })
 }

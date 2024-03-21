@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ItemDetailContainer from './components/itemDetailContainer'
 import { CartContext, CartProvider } from './context/CartContext';
+import CartPage from './components/CartPage';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           />
           <Routes>
             <Route path="/category/:id" element={<ItemListContainer />} />
+            <Route path="/cart" element={<CartPage />} />
             <Route path='/items' element={<ItemDetailContainer />} />
             <Route path="/item/:id" element={<ItemDetailContainer />} />
             <Route path="/" exact element={<ItemListContainer />} />

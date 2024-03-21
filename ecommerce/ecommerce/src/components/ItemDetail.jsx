@@ -2,17 +2,23 @@ import { toast } from "react-toastify";
 import ItemCount from "./ItemCount";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import Extra from "./Extra";
 
 export const ItemDetail = ({ item }) => {
   const { nombre, imagen, precio, isOnDiscount, descripcion, stock } = item;
-  const { addToCart, cart } = useContext(CartContext);
+  const { addItem, cart, removeItem } = useContext(CartContext);
 
-  const onAdd = (quantity, item) => {
-    addToCart({ quantity: quantity, item })
-    toast('Elemento agregado al carrito correctamente')
+  const onAdd = (quantity) => {
+    addItem(item, quantity)
+    toast('El item fue agregado correctamente')
   }
+
+  const onRemove = (quantity) => {
+    removeItem(item.id, quantity)
+    toast('El item fue eliminado correctamente')
+  }
+
   console.log(cart)
+
 
   return (<>
     <div className="max-w-sm rounded overflow-hidden shadow-lg mb-4 mx-auto my-20">
@@ -30,8 +36,7 @@ export const ItemDetail = ({ item }) => {
         </p>
         <p className="text-gray-700 text-base">{stock}</p>
         <p className="text-gray-700 text-base">{descripcion}</p>
-        <ItemCount stock={stock} initial={0} onAdd={onAdd} item={item} />
-        <Extra />
+        <ItemCount stock={stock} initial={0} item={item} onAdd={onAdd} onRemove={onRemove} />
       </div>
     </div>
   </>);

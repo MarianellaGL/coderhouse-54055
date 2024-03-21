@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 
-const ItemCount = ({ stock, initial, onAdd, item }) => {
+const ItemCount = ({ stock, initial, onAdd, onRemove }) => {
   const [count, setCount] = useState(initial);
 
   const handleCountChange = (value) => {
     const newCount = count + value;
-    if (newCount >= 1 && newCount <= stock) {
+    if (newCount >= 0 && newCount <= stock) {
       setCount(newCount);
+    }
+    if (value === 1) {
+      onAdd(1)
+    }
+    if (value === -1) {
+      onRemove(1)
     }
   };
 
-  const handleAdd = () => {
-    if (count > 0) {
-      onAdd(count, item);
-    }
-  };
 
   return (
     <div className="flex items-center justify-center">
@@ -35,12 +36,6 @@ const ItemCount = ({ stock, initial, onAdd, item }) => {
         className="bg-gray-200 px-3 py-1 rounded-r"
       >
         +
-      </button>
-      <button
-        onClick={handleAdd}
-        className="ml-4 bg-teal-500 text-white px-4 py-1 rounded"
-      >
-        Agregar al carrito
       </button>
     </div>
   );

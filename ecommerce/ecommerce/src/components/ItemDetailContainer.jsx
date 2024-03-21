@@ -1,6 +1,6 @@
 //agrupador de componentes
 
-import { memo, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import productos from '../utils/MocksAsync.json';
 import { ItemDetail } from "./ItemDetail";

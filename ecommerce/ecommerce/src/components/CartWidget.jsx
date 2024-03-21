@@ -1,10 +1,10 @@
+import { useContext } from 'react';
 import Cart from '../assets/Cart.svg'
+import { CartContext } from '../context/CartContext';
 
 const CartWidget = () => {
-  return (<><div className='flex'>
-    <img src={Cart} alt="Cart" />
-    <span className='text-white'>(19)</span>
-  </div></>);
+
+  return (<></>);
 }
 
 export default CartWidget;

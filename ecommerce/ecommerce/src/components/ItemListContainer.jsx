@@ -13,8 +13,6 @@ const ItemListContainer = () => {
     fakeApiCall(productos).then(res => { setResponse(res); setLoading(false); });
   }, []);
 
-  if (loading) return <h1>Cargandoo.....</h1>
-
 
   const getProductosByCategoria = (categoriaId) => {
     if (categoriaId) {
